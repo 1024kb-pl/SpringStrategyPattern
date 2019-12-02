@@ -26,5 +26,7 @@ public class SpringStrategyPatternApplication implements CommandLineRunner {
 		recipientService.createRecipient(new Recipient(RecipientType.USER, "user:pablo"));
 		recipientService.createRecipient(new Recipient(RecipientType.EMAIL, "qwe@wp.pl"));
 		recipientService.createRecipient(new Recipient(RecipientType.USER, "pablofail"));
+		recipientService.createRecipient(new Recipient(RecipientType.FIELD, "fiel:pole"));
+		recipientService.createRecipient(new Recipient(RecipientType.FIELD, "field:pole"));
 	}
 }
